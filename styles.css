@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #252525;
+    /* --color-bg: #1f2641; */
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 56%;
+    --container-width-md: 86%;
+    --container-width-sm: 94%;
+
+    --bodyFont: 'Montserrat', sans-serif;
+    --titleFont: 'Inter', sans-serif;
+    --textFont: 'Poppins', sans-serif;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: var(--bodyFont);
+    line-height: 1.7;
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-bg);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+
+/* ========================================== NAV ================================================ */
+nav {
+    background: var(--color-white)/0.5;
+    backdrop-filter: blur(16px);
+    width: 100vw;
+    height: 12vh;
+    /* height: 5rem; */
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav button {
+    display: none;
+} */
+
+.humburger {
+    display: none;        
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+/* ========================================== NAV ================================================ */
+
+/* ========================================== HEADER ================================================ */
+header {
+    position: relative;
+    top: 12vh;
+    overflow: hidden;
+    /* height: 70vh; */
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    padding-top: 5rem;
+}
+
+.header__container p {
+    padding: 0 0 2rem 0;
+}
+
+.header__container .header__title h1 {
+    font-size: 6rem;
+    font-weight: 300;
+}
+/* ========================================== HEADER ================================================ */
+
+/* ========================================== SECTION ================================================ */
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section__container .card {
+    padding: 4rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.section__container h3 {
+    /* max-width: 12vw; */
+    padding-bottom: 3rem;
+}
+
+.section__container p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.section__container a {
+    color: var(--color-white);
+}
+/* ========================================== SECTION ================================================ */
+
+.info__container {
+    padding-bottom: 6rem;
+}
+
+.info__container h1 {
+    padding-bottom: 2rem;
+}
+
+.info__container h4 {
+    font-weight: 500;
+}
+
+/* ========================================== FOOTER ================================================ */
+footer {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.footer__container {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    width: 100%;
+    background: var(--color-black);
+    color: #ccc;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* ========================================== FOOTER ================================================ */
+
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+/* ========================================== NAV ================================================ */
+
+
+/* =================================== MEDIA QUERIES (TABLETS) ==================================) */
+
+/* ==================== */
+@media screen and (max-width: 1670px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+}
+/* ==================== */
+
+
+@media screen and (max-width: 1080px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    nav {
+        height: 5rem;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .humburger {
+        position: relative;
+        width: 1.5rem;
+        height: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.25rem;
+        color: #4a5568;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .humburger__upper {
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: #4a5568; /* You may adjust the color code based on your design */
+        transition: var(--transition);
+    }
+
+
+    .humburger__middle {
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: #4a5568; /* You may adjust the color code based on your design */
+        transform: translateX(8px); /* Initial translation */
+        transition: var(--transition);
+    }
+
+
+    .humburger__lower {
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: #4a5568; /* You may adjust the color code based on your design */
+        transform: translateX(4px); /* Initial translation */
+        transition: var(--transition);
+    }
+
+    .humburger:hover .humburger__upper {
+    transform: translateX(5px);
+    }
+
+    .humburger:hover .humburger__middle {
+    transform: translateX(0);
+    }
+
+    .humburger:hover .humburger__lower {
+    transform: translateX(8px);
+    }
+
+    header {
+        top: 5rem;
+    }
+
+    .header__container .header__title h1 {
+        font-size: 5rem;
+    }
+
+    
+    .section__container {
+        grid-template-columns: 1fr;
+    }
+
+    .section__container h3 {
+        max-width: 100%;
+    }
+
+    
+
+    .section__container.reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+/* =================================== MEDIA QUERIES (TABLETS) ==================================) */
+
+/* =================================== MEDIA QUERIES (PHONES) ===================================) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .header__container .header__title h1 {
+        font-size: 3rem;
+    }
+
+    .section__container .card {
+        padding: 1rem;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+        align-items: start;
+    }
+}
+/* =================================== MEDIA QUERIES (PHONES) ===================================) */
